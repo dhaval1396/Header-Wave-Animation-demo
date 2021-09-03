@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	nav {
+  		background-color: #46bf62 !important;
+	    display: inline-block;
+	    position: relative;
+	    vertical-align: top;
+	    width: 100%;
+  	}
+  	nav:before {
+  		background-image: url(image/pattern.png);
+	    background-position: center 1px;
+	    background-color: transparent;
+	    background-attachment: scroll;
+	    background-repeat: repeat-x;
+	    box-sizing: border-box;
+	    position: absolute;
+	    bottom: -33px;
+	    left: 0;
+	    right: 0;
+	    height: 35px;
+	    width: 100%;
+	    content: "";
+	    z-index: 6;
+	    display: inline-block;
+	    animation: animatedBackground 150s linear infinite;
+	    -ms-animation: animatedBackground 150s linear infinite;
+	    -moz-animation: animatedBackground 150s linear infinite;
+	    -webkit-animation: animatedBackground 150s linear infinite;
+  	}
+  	@keyframes animatedBackground {
+	    from {
+	        background-position: 0 0;
+	    }
+	    to {
+	        background-position: 100% 0;
+	    }
+	}
+	@-webkit-keyframes animatedBackground {
+	    from {
+	        background-position: 0 0;
+	    }
+	    to {
+	        background-position: 100% 0;
+	    }
+	}
+	@-o-keyframes animatedBackground {
+	    from {
+	        background-position: 0 0;
+	    }
+	    to {
+	        background-position: 100% 0;
+	    }
+	}
+	@-moz-keyframes animatedBackground {
+	    from {
+	        background-position: 0 0;
+	    }
+	    to {
+	        background-position: 100% 0;
+	    }
+	}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+</body>
+</html>
